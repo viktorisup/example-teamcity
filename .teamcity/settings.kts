@@ -35,8 +35,6 @@ project {
 object Build : BuildType({
     name = "Build"
 
-    artifactRules = "target/my-app-1.0-SNAPSHOT.jar => my-artifacts/"
-
     params {
         password("env.NEXUS_PASSWORD", "credentialsJSON:7a9e88b3-4f27-4f1a-b78d-2abe845f244b")
         param("env.NEXUS_USERNAME", "admin")
