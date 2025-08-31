@@ -35,6 +35,6 @@ public class WelcomerTest {
     public void welcomerSaysHunterReply() {
         String reply = welcomer.sayHunterReply();
         assertThat(reply.toLowerCase(), containsString("hunter"));
-}
+    }
 
 }
